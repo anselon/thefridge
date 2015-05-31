@@ -1,0 +1,259 @@
+body {
+font-family:'Lato',sans-serif;
+background-color:#CADBD5;
+margin:0;
+display:block;
+}
+
+header {
+font-size:25px;
+color:#6E6651;
+padding:10px;
+margin-bottom:20px;
+height:50px;
+background-color:#fff;
+vertical-align:bottom;
+font-weight:700;
+width:100%;
+position:fixed;
+top:0;
+margin-top:0;
+z-index:100;
+box-shadow:0 0 0 10 gray;
+}
+
+header span {
+position:absolute;
+bottom:20px;
+left:20px;
+}
+
+section#fridge {
+background-image:url(refridgerator_colored.png);
+position:relative;
+display:block;
+margin-top:50px;
+width:80%;
+margin-left:10%;
+background-size:contain;
+-webkit-background-size:contain;
+-moz-background-size:contain;
+-o-background-size:contain;
+background-repeat:no-repeat;
+width:80%;
+height:0;
+padding-top:160%;
+}
+
+.note-container {
+left:50px;
+position:absolute;
+top:80px;
+}
+
+li.note {
+width:170px;
+height:220px;
+border:3px solid;
+border-radius:5px;
+display:inline-block;
+background-color:gray;
+position:relative;
+padding:10px;
+margin:5px;
+margin-bottom:30px;
+background-color:#CBFBFF;
+clear:both;
+}
+
+.magnet {
+border-radius:50%;
+position:relative;
+background-color:#6E6651;
+border:3px solid #000;
+margin-left:65px;
+margin-top:-25px
+}
+
+li.note .day {
+font-size:35px;
+margin-right:5px;
+}
+
+li.note .month {
+margin:5px;
+}
+
+li.note .occasion {
+font-family:'Playfair-Display',serif;
+font-style:italic;
+width:90%;
+font-size:30px;
+text-align:center;
+}
+
+li.note .invited {
+width:50%;
+float:left;
+font-size:15px;
+bottom:10px;
+position:absolute;
+}
+
+span.cancelled {
+color:red;
+float:right;
+font-size:15px;
+width:50%;
+bottom:10px;
+position:absolute;
+left:95px;
+}
+
+@media only screen and (min-width: 320px) {
+	section#fridge {
+	background-image:url(refridgerator_colored_small.png);
+	width:100%;
+	margin-left:0;
+	margin-top:70px;
+	padding-top:200%;
+	height:0;
+	display:block;
+	}
+
+	.note-container {
+	position:absolute;
+	top:30px;
+	max-width:60%;
+	left:30%;
+	margin-left:-15%;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	display:flex;
+	note-sizing:content-note;
+	}
+
+	li.note {
+	width:150px;
+	height:70px;
+	}
+
+	li.note .day {
+	font-size:15px;
+	margin-right:5px;
+	}
+
+	li.note .occasion {
+
+	font-size:15px;
+
+	}
+
+	li.note .invited {
+
+	font-size:12px;
+	
+	}
+
+	li.note span.cancelled {
+	font-size:12px
+	}
+
+	.magnet {
+	height:15px;
+	width:15px;
+	top:2px;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	section#fridge {
+	background-image:url(refridgerator_colored.png);
+	position:relative;
+	margin-top:50px;
+	width:80%;
+	margin-left:10%;
+	width:80%;
+	padding-top:160%;
+	}
+
+	.note-container {
+	left:150px;
+	width:65%;
+	top:50px;
+	margin-left:0;
+	padding-left:0;
+	}
+
+	li.note {
+	width:150px;
+	height:120px;
+	}
+
+	li.note .day {
+	font-size:30px;
+
+	}
+
+	li.note .occasion {
+
+	font-size:20px;
+
+	}
+
+	li.note .invited {
+
+	font-size:12px;
+
+	}
+
+	span.cancelled {
+
+	font-size:12px;
+
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.note-container {
+	display:flex;
+	left:180px;
+	max-width:70%;
+	top:100px;
+	margin-left:5%;
+	}
+
+	li.note {
+	width:170px;
+	height:220px;
+	}
+
+	li.note .day {
+	font-size:35px;
+	}
+
+	li.note .occasion {
+
+	font-size:30px;
+
+	}
+
+	li.note .invited {
+
+	font-size:15px;
+
+	}
+
+	span.cancelled {
+	font-size:15px;
+
+	}
+
+	div.magnet {
+
+	width:25px;
+	height:25px;
+	margin-left:65px;
+	margin-top:-25px;
+	}
+}
